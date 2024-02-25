@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
-import {Navbar, Container} from "react-bootstrap";
+import {Navbar, Nav, Container} from "react-bootstrap";
 
-import linkedin from 'src/assets/images/linkedin.svg';
-import ig from 'src/assets/images/ig.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import logo from '../assets/images/logo.png';
+import linkedin from '../assets/images/linkedin.svg';
+import ig from '../assets/images/ig.svg';
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -31,18 +34,8 @@ export const NavBar = () => {
         <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
             <Container>
                 <Navbar.Brand href="#home">
-                    <span className="navbar-text">
-                        <div className="social-icon">
-                            <a href="#">
-                                <img src={linkedin} alt=""></img>
-                            </a>
-                            <a href="#">
-                                <img src={ig} alt=""></img>
-                            </a>
-                        </div>
-                        <button className="vvd" onClick={() => console.log('connect')}><span>Let's connect</span></button>
-                    </span>
-                    <img src={''} alt="logo" />
+                    <img src={logo} alt="logo" className="navbar-logo"/>
+                    {/* <FontAwesomeIcon icon="fa-solid fa-cloud" style={{color: "#ffffff",}} /> */}
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
                     <span className="navbar-toggler-icon"></span>
@@ -68,6 +61,17 @@ export const NavBar = () => {
                         </NavDropdown>
                         */}
                     </Nav>
+                    <span className="navbar-text">
+                        <div className="social-icon">
+                            <a href="#">
+                                <img src={linkedin} alt=""></img>
+                            </a>
+                            <a href="#">
+                                <img src={ig} alt=""></img>
+                            </a>
+                        </div>
+                        <button className="vvd" onClick={() => console.log('connect')}><span>Let's connect</span></button>
+                    </span>
                 </Navbar.Collapse>
             </Container>
         </Navbar>

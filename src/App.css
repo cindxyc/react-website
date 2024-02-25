@@ -2,19 +2,19 @@
 
 @font-face {
   font-family: Centra;
-  src: url('src/assets/fonts/CentraNo2-Bold.ttf');
+  src: url('./assets/fonts/CentraNo2-Bold.ttf');
   font-weight: 700;
 }
 
 @font-face {
   font-family: Centra;
-  src: url('src/assets/fonts/CentraNo2-Medium.ttf');
+  src: url('./assets/fonts/CentraNo2-Medium.ttf');
   font-weight: 500;
 }
 
 @font-face {
   font-family: Centra;
-  src: url('src/assets/fonts/CentraNo2-Book.ttf');
+  src: url('./assets/fonts/CentraNo2-Book.ttf');
   font-weight: 400;
 }
 
@@ -75,6 +75,11 @@ nav.navbar.scrolled {
 
 nav.navbar a.navbar-brand {
     width: 9%;
+}
+
+.navbar-logo {
+  width: 50px;
+  height: auto;
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
@@ -143,7 +148,7 @@ transition: 0.3s ease-in-out;
   font-weight: 700;
   color: aliceblue;
   border: 1px solid aliceblue;
-  padding: 18px 34px;
+  padding: 13px 22px;
   font-size: 18px;
   margin-left: 18px;
 	position: relative;
