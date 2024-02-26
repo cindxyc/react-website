@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import {Navbar, Nav, Container} from "react-bootstrap";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import logo from '../assets/images/logo.png';
 import linkedin from '../assets/images/linkedin.svg';
 import ig from '../assets/images/ig.svg';
+import github from '../assets/images/github.png';
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -63,10 +64,13 @@ export const NavBar = () => {
                     </Nav>
                     <span className="navbar-text">
                         <div className="social-icon">
-                            <a href="#">
+                            <a href="https://github.com/cindxyc" target="_blank" rel="noreferrer noopener">
+                                <img src={github} alt=""></img>
+                            </a>
+                            <a href="https://www.linkedin.com/in/cindxyc/" target="_blank" rel="noreferrer noopener">
                                 <img src={linkedin} alt=""></img>
                             </a>
-                            <a href="#">
+                            <a href="https://www.instagram.com/_cindxyc_ts13/" target="_blank" rel="noreferrer noopener">
                                 <img src={ig} alt=""></img>
                             </a>
                         </div>
